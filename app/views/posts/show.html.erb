@@ -1,0 +1,15 @@
+
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Content</th>
+		<th></th>
+	</tr>
+	<tr>
+		<td><%= @post.title %></td>
+		<td><%= @post.text %></td>
+		<td><%= link_to 'Edit', edit_post_path(params[:id]) %></td>
+	</tr>
+</table>
+
+<%= link_to 'Back', posts_path %>
